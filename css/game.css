@@ -1,0 +1,26 @@
+.background    { 
+				background-image: url("http://s3.postimg.org/enxpchvyb/finalbkg.jpg");
+                 table-layout: fixed;
+                 border-spacing: 0;   
+				 }
+.background td { padding: 0;          }
+.water          { background: #6992f2; }
+.wall          { background-image: url("http://s11.postimg.org/w7t9du3q7/dirttexture.jpg");}
+
+.actor  { position: absolute;  }
+.poffin   { background-image: url("http://oi61.tinypic.com/wgs4zq.jpg");}
+.player { background-image: url("http://pldh.net/media/pokemon/gen5/blackwhite_animated_back/035.gif"); }
+.poison{ background-image: url("http://oi58.tinypic.com/ettr1g.jpg"); }
+.steel{ background-image: url("http://oi62.tinypic.com/os9vcy.jpg"); }
+.game {
+  overflow: hidden;
+  max-width: 600px;
+  max-height: 450px;
+  position: relative;
+}
+.lost .player {
+  background-image: url("http://oi61.tinypic.com/ej63wk.jpg");
+}
+.won .player {
+  background-image:url("http://images.uncyc.org/commons/2/26/ClefairySprite.gif");
+}
