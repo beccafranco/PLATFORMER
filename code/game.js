@@ -317,7 +317,7 @@ Poffin.prototype.act = function(step, level) {
 
 var maxStep = 0.05;
 
-var wobbleSpeed = 8, wobbleDist = 0.07;
+var wobbleSpeed = 10, wobbleDist = 0.07;
 
 Poffin.prototype.act = function(step, level) {
   this.wobble += step * wobbleSpeed;
@@ -512,8 +512,8 @@ function runGame(plans, Display) {
       	if (lives > 0) {
         startLevel(n, lives - 1);
         } else {
-        alert("You lose!");
-        startLevel(0, 6);
+        alert("You failed!");
+        startLevel(0);
         }
       } else if (n < plans.length - 1) {
         startLevel(n + 1, lives);
@@ -521,10 +521,10 @@ function runGame(plans, Display) {
 		map.pause();
 		levelVictory.pause();
       	won.play();
-        alert("You win!");
+        alert("You succeeded!");
       //Alerts that display depending on win or loss   
       }
     });
   }
-  startLevel(0, 6);
+  startLevel(0);
 }
